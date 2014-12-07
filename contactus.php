@@ -30,7 +30,8 @@ require_once('config.php');
 
 	 function callLocator()
 	 {	
-		//alert('hai');
+		alert('hai');
+		return false;
 		var type=$("#typeofp").val();
 		var loc=$("#locationofp").val();
 		//alert(loc);
@@ -97,6 +98,7 @@ require_once('config.php');
 	 
 	 function storedtls()
 	 {	
+
 		var name=$("#name").val();
 		var email=$("#email").val();
 		var project=$("#projectname").val();
@@ -112,6 +114,8 @@ require_once('config.php');
 		var emailvalid='true';
 		var mobilevalid='true';
 		emailvalid=validateemail();
+		//alert(email+'-'+name+'-'+dtls+'-'+project+'-'+country+"-"+city+"-"+mobile1+mobile2+"-"+hearing+"-"+timeframe+""+toi);
+/*
 		if(mobile1.length>5)
 		{
 			mobilevalid='false';
@@ -124,7 +128,7 @@ require_once('config.php');
 		{
 			mobilevalid='false';
 		}
-		if(isNaN(mobile1+mobile2))
+		if(isNaN(mobile2))
 		{
 			mobilevalid='false';
 		}
@@ -181,18 +185,18 @@ require_once('config.php');
 		 	{
 				$("#errordiv").html('<B style="color:green;">Please wait your query is submitting....</B>');
 			}
-
+*/
 			
 		$.ajax({
 			type:"GET",
 			datatype:"JSON",
 			
 			
-            url:"http://www.aparnaconstructions.com/aparnaCMS/index.php?r=json/getStoreWridtls&email="+email+"&name="+name+"&dtls="+dtls+"&project="+project+"&country="+country+"&city="+city+"&phone="+mobile1+mobile2+"&hearing="+hearing+"&timeframe="+timeframe+"&toi="+toi,
+            url:"storedtls.php?email="+email+"&name="+name+"&dtls="+dtls+"&project="+project+"&country="+country+"&city="+city+"&phone="+mobile1+mobile2+"&hearing="+hearing+"&timeframe="+timeframe+"&toi="+toi,
            
 				success:function(data)
 				{
-					//alert(data);
+					alert(data);
 					
 					document.getElementById('email').value='';
 					document.getElementById('name').value='';
@@ -207,7 +211,7 @@ require_once('config.php');
 				},
 				error:function(xhr)
 			{
-				//alert(xhr.response);
+				alert(xhr.response);
 				}
 			
 			});
@@ -725,7 +729,7 @@ HYDERABAD<!-- </select> -->
 				</div>
 				<div class="col-mod-12">
 				<!--p style="margin-left:70px;margin-top:20px;border-top:1px solid #8c8c8c;"><span style="color:#c35a17;padding-left:200px;padding-top:50px;">*</span> Required</p-->
-				<p style="padding-left:20px;margin-top:26px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding-top:10px;padding-bottom:10px;">How can we assist you?</p><div id="errordiv" style="margin:5px;"><b style="color:red;">Please enter your Name</b></div>
+				<p style="padding-left:20px;margin-top:26px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding-top:10px;padding-bottom:10px;">How can we assist you?</p><div id="errordiv" style="margin:5px;"></div>
 				<div id="namediv">	
 			<p style="padding-left:20px;margin:20px 0px 0px -13px;"><span style="color:#ff0000;">* </span>Name:
 				<br><input type="text" name="name" id="name" style="border:solid 1px #E6E6E6; height:30px; width:90%; margin-left:5px;">

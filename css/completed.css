@@ -1,0 +1,379 @@
+body {
+font-family:GothamBook;
+font-size:13px;
+background:#12181E;
+}
+p
+{
+	text-align:justify;
+}
+.footer {
+padding:4px 0;
+position:fixed;
+bottom:0;
+width:100%;
+background-color: rgb(3, 5, 17);
+opacity: 0.9;
+z-index:9999999 !important;
+}
+
+.carousel-inner {
+background:#000 !important;
+}
+.footer p {
+font-size:12px;
+color:rgb(151, 115, 85);
+line-height:1.5;
+padding-left:10px;
+margin-top:4px !important;
+}
+.txt {
+margin:10px;
+padding:10px;
+}
+.footer a {
+color:rgb(151, 115, 85);
+}
+.footer a:hover {
+text-decoration:none;
+}
+
+.pdngfiv {
+padding-top:10px;
+}
+.footer-rgt ul, li{
+list-style:none;
+padding:0;
+margin:0;
+}
+#footerlink a, #footerlink br {
+margin-top:5px;
+padding-top:5px;
+}
+.footer-rgt li {
+background:url(../images/aparnaLogo1.png) 1px 1px right center no-repeat;
+}
+.footext {
+line-height:40px !important;
+line-height:50px !important; 
+text-align:right !important;
+}
+.topnavi {
+position:absolute;
+top:30px;
+background:#000;
+right:0;
+}
+.carousel-control.right, .carousel-control.left {
+background:none;
+}
+.carousel-control .glyphicon-chevron-right:before {
+   background:none;
+   content: " ";       
+   display:block;       
+   background:url(../images/scrollR.png) no-repeat;       
+   width:33px;
+   height:63px;
+}
+.carousel-control .glyphicon-chevron-left:before {
+   background:none;
+   content: " ";       
+   display:block;       
+   background:url(../images/scrollL.png) no-repeat;       
+   width:33px;
+   height:63px;
+}
+.fltrgt {
+float:right;
+}
+.fltlft {
+float:left;
+}
+#minimize_box, #minimize_boxa, #minimize_boxd, #minimize_boxbt, #minimize_boxtc,#minimize_box_plans {
+background-color: rgb(255, 255, 255);
+border: 1px solid;    
+left: 45%;
+position: absolute;
+text-align: center;
+bottom:66px;
+z-index:10 !important;
+
+}
+#minimize_box p, #minimize_boxd p, #minimize_boxbt p, #minimize_boxa p, #minimize_boxtc p,#minimize_box_plans {
+	float: left;        
+	line-height: 1.5;  
+	padding:0 0 0 14px;	
+	cursor:pointer;
+}
+.prostat {
+margin-top:9px !important;
+}
+.modal-content {
+background:url(../images/textbgwhiteopacity.png);
+}
+
+
+
+.navbar {
+border: medium none;
+margin-bottom: 0;
+min-height: 50px;
+z-index:99999 !important;
+}
+.navbar {
+background:#12181E;
+}
+.navbar-default .navbar-nav > li > a {
+	color:#fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #red !important;  
+  background:#ccc;
+}
+
+
+.navbar {
+	border:none;
+	margin-bottom: 0px;  		
+	min-height:30px !important;
+}
+.nav > li > a {
+	display: block;
+	padding: 10px 15px;    
+	color: rgb(230, 227, 222);	
+}
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0px !important;	
+}
+.nav > li:last-child {
+border-right:none;
+}
+.dropdown-menu > li > a {    
+	padding: 6px 10px;
+	text-align: left;    
+}
+.dropdown-menu {
+border:none;
+}
+.navbar-nav > li > .dropdown-menu {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-top: 0;
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+}
+
+@media all and (min-width:200px) and (max-width: 767px) {
+	.inner-form {
+	overflow-y:scroll !important;
+	height:78% !important;
+	width:90% !important;
+	margin:0 auto !important;
+	position:fixed !important;
+	margin-left:5%  !important;
+	}
+	.btn-default {
+	margin-bottom:20px !important;
+	}
+	#contactform .closeform {
+	top:0 !important;
+	right:0 !important;
+	}
+	.ph-land {
+	margin-top:10px;	
+	margin-bottom:10px;
+	width:100%;
+	}
+	.nmnp {	
+	padding:0 !important;
+	}
+	.inner-form h3{
+	font-size:17px;
+	margin:0 !important;
+	padding:0 !important;
+	}
+	.inner-form .btn-default {	
+	margin-top:20px;
+	}
+	#downloadtab input{
+	width:300px !important;
+	}
+	#downloadtab label{
+	font-weight:normal !important;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width:992px) {
+	.navbar {
+	z-index:99999 !important;
+	}
+	.inner-form {
+	background-color:#fff;
+	border:solid 8px #453D3A;
+	padding:5px 15px;
+	overflow:hidden;
+	}
+	.inner-form h3{
+	font-size:15px;
+	margin:0 !important;
+	padding:0 !important;
+	}
+	.inner-form hr{
+	margin:0;
+	padding:4px 0;
+	}
+	.inner-form input{
+	margin:5px 0;
+	width:220px;
+	height:30px !important;
+	}
+	.inner-form label{
+	font-weight:normal;
+	font-size:11px;
+	}
+	.inner-form select{
+	width:220px;
+	height:30px;
+	}
+	.inner-form  .form-group{
+	margin-bottom:0 !important;
+	font-size:12px;
+	}
+	.inner-form .btn-default {
+	padding:5px 20px !important;
+	font-size:12px;
+	margin-top:10px;
+	}
+	#downloadtab input{
+	width:300px !important;
+	}
+	#downloadtab label{
+	font-weight:normal !important;
+	}
+}
+
+@media all and (min-width: 993px) and (max-width:1199px) {
+	.inner-form {
+	background-color:#fff;
+	border:solid 8px #453D3A;
+	padding:5px 15px;
+	overflow:hidden;
+	}
+	.inner-form h3{
+	font-size:15px;
+	margin:0 !important;
+	padding:0 !important;
+	}
+	.inner-form hr{
+	margin:0;
+	padding:4px 0;
+	}
+	.inner-form input{
+	margin:5px 0;
+	width:220px;
+	height:30px !important;
+	}
+	.inner-form label{
+	font-weight:normal;
+	font-size:11px;
+	}
+	.inner-form select{
+	width:220px;
+	height:30px;
+	}
+	.inner-form  .form-group{
+	margin-bottom:0 !important;
+	font-size:12px;
+	}
+	.inner-form .btn-default {
+	padding:5px 20px !important;
+	font-size:12px;
+	margin-top:10px;
+	}
+	.inner-form  .form-control .myland{
+	margin-left:-15px !important;
+	border: solid 1px red !important;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.inner-form h3{
+	font-size:17px;
+	margin:0 !important;
+	padding:0 !important;
+	}
+	.inner-form .btn-default {	
+	margin-top:20px;
+	}
+	.bottom-download
+	{
+		
+		margin-left:10%;
+	}
+	.bottom-download input
+	{
+		margin-right:5%;
+	}
+	
+}
+/* contactform */
+#contactform {
+padding:0;
+    margin: 0 auto;
+    position: absolute;
+
+	top:72px;
+	left:25%;
+	right:25%;
+	z-index:999 !important;
+}
+
+#contactform .closeform{
+position:absolute;
+right:8px;
+top:51px;
+}
+.cont-team-wrap {
+width:136px;
+background:#443E39;
+margin-left:25px;
+}
+.cont-our-team {
+}
+.inner-form {
+background-color:#fff;
+border:solid 8px #453D3A;
+padding:5px 15px;
+overflow:hidden;
+}
+.inner-form  hr {
+border-top:solid 1px #453D3A;
+margin:8px 0;
+padding:0;
+}
+.inner-form .bdr {
+border-top:solid 1px #453D3A;
+}
+.inner-form h3, .inner-form h3 p {
+margin:0;
+padding:0;
+}
+.error {
+color:#ff0000;
+font-family:arial;
+}
+.inner-form .btn-default {
+background:#D42431;
+border-radius:0;
+border:0;
+color:#fff;
+padding:12px 35px;
+}
+
+
+
+
+
